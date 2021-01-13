@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 87%;
+  min-height: 200px;
+  background-color: darkgoldenrod;
+  margin: 0px auto;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 6944px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  overflow-x: hidden;
+}
+
+header{
+  margin: 20px auto;
+  width: 1860px;
+  height: 78px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+  z-index: 100;
+}
+
+.logo{
+  cursor: pointer;
+  width: 211.98px;
+}
+
+.nav-links{
+  list-style: none;
+}
+
+.nav-links li{
+  display: inline-block;
+  padding-right: 35px;
+}
+
+.nav-links li, a{
+  font-size: 20px;
+  color: #666666;
+  text-decoration: none;
+  font-weight: 600px;
+}
+
+.nav-buttons {
+  margin-left: auto;
+}
+
+button {
+  background: var(--unnamed-color-c1d632) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 50px;
+  border: none;
+  opacity: 1;
+  width: 200px;
+  height: 50px;
+  color: #FFFFFF;
+  font-size: 18px;
+  text-transform: uppercase;
+  font: normal normal 600 18px/21px Raleway;
+}
+
+.btn-green
+{
+  background: #C1D632 0% 0% no-repeat padding-box;
+}
+
+.btn-blue
+{
+  background: #1F9BB2 0% 0% no-repeat padding-box;
+}
+
+/* Main Pictures */
+#main-pictures{
+  min-height: 1039px;
+}
+
+.banner{
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-bg{
+  background-image: url(../img/Path\ 4.svg);
+  height: 1038.69px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -85.18868255615234px;
+  left: 833px;
+  width: 1185px;
+  height: 1124px;
+}
+
+.main-bg-2{
+  background-image: url(../img/NoPath.png);
+  position: absolute;
+  top: -118px;
+  left: 899px;
+  width: 1169px;
+  height: 1119px;                 
+}
+
+.text-box{
+  width: 624px;
+  margin-left: 140px;
+  margin-top: 160px;
+}
+
+.text-box h1{
+  color: #666666;
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.text-box h2{
+  margin-top: 40px;
+  font-size: 54px;
+  color: #1F9BB2;
+}
+
+.text-box button{
+  width: 280px;
+  height: 70px;
+  margin-top: 30px;
+  font-size: 24px;
+  box-shadow: 0px 10px 25px #00000029;
+}
+
+.partner{
+  background: transparent url('../img/Image\ 20@2x.png') 0% 0% no-repeat padding-box;
+  width: 740px;
+  height: 125px;
+  background-size: cover;
+  background-position: center;
+  margin-left: 140px;
+  margin-top: 86px;
+}
