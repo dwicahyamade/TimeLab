@@ -557,3 +557,39 @@ button {
   height: 70px;
   font-size: 22px;
 }
+
+/* footer */
+.footer .container{
+  width: 85%;
+  min-height: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.footer-box{
+  margin: 290px 0 122px 0;
+}
+
+.footer .sub-title{
+  margin: 0;
+  color: #666666;
+  width: auto;
+  text-align: left;
+  line-height: 30px;
+  height: 165px;
+  font-size: 18px;
+}
+
+.footer .title{
+  margin-top: 0;
+  margin-bottom: 20px;
+  font: normal normal 600 24px Raleway;
+  color: #1F9BB2;
+  text-align: left;
+  display: block;
+}
+
+.footer-img{
+  margin-right: 22.5px;
+}
