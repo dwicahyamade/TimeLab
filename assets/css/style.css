@@ -25,7 +25,7 @@ body{
 
 header{
   margin: 20px auto;
-  width: 1860px;
+  width: 96%;
   height: 78px;
   display: flex;
   flex-wrap: wrap;
@@ -89,6 +89,7 @@ button {
 .banner{
   min-height: 920px;
   overflow: hidden;
+  width: 100%;
 }
 
 .main-bg{
@@ -97,21 +98,25 @@ button {
   background-repeat: no-repeat;
   position: absolute;
   top: -85.18868255615234px;
-  left: 833px;
+  right:  -120px;
   width: 1185px;
   height: 1124px;
 }
 
 .main-bg-2{
+  float: right;
   background-image: url(../img/NoPath.png);
   position: absolute;
   top: -118px;
-  left: 899px;
+  right: -160px;
   width: 1169px;
-  height: 1119px;                 
+  height: 1119px;       
+  background-repeat: no-repeat;          
 }
 
 .text-box{
+  position: relative;
+  z-index: 2;
   width: 624px;
   margin-left: 140px;
   margin-top: 160px;
@@ -138,6 +143,8 @@ button {
 }
 
 .partner{
+  position: relative;
+  z-index: 2;
   background: transparent url('../img/Image\ 20@2x.png') 0% 0% no-repeat padding-box;
   width: 740px;
   height: 125px;
@@ -178,7 +185,7 @@ button {
   height: 849px;
 }
 
-.container{
+.why-bg .container{
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -213,7 +220,7 @@ button {
   text-align: center;
   margin-top: 54px;
   color: #C1D632;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
 }
 
@@ -241,4 +248,56 @@ button {
   position: absolute;
   top: 40%;
   left: 45%;
+}
+
+/* Portofolio */
+.portofolio .title{
+  margin: 220px auto 0 auto;
+  width: 878px;
+}
+
+.sub-title{
+  margin: 41px auto;
+  color: #666666;
+  width: 750px;
+  text-align: center;
+  line-height: 40px;
+  height: 165px;
+}
+
+.portofolio .container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.portofolio .card{
+  margin-top: 0;
+  width: 381px;
+  height: 620px;
+}
+
+.portofolio .card-img{
+  width: 381px;
+  height: 359px;
+  margin: auto;
+  text-align: center;
+}
+
+.portofolio .card h3{
+  text-align: center;
+  margin-top: 45px;
+  color: #C1D632;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.portofolio .card p{
+  width: 328px;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 20px;
+  color: #666666;
+  font-weight: 400px;
 }
