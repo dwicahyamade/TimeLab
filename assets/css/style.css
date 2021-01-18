@@ -117,7 +117,7 @@ button:hover{
     right: 0;
     display: none;
     width: 90%;
-    height: 100vh;
+    height: 80vh;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
