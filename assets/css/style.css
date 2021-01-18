@@ -87,6 +87,10 @@ button {
 
 /* Responsive Breakpoint */
 @media (max-width: 1024px){
+  body{
+    overflow-x: hidden;
+  }
+   
   .menu-toggle{
     margin-left: auto;
     display: flex;
