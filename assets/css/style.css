@@ -35,6 +35,11 @@ button {
   font-size: 18px;
   text-transform: uppercase;
   font: normal normal 600 18px/21px Raleway;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.8;
 }
 
 .btn-green
@@ -105,14 +110,19 @@ button {
   }
 
   .nav-links{
+    margin-right: -10px;
     z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
     display: none;
-    width: 100vmax;
+    width: 90%;
+    height: 100vh;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0px 3px 6px #0000005e;
   }
 
   .nav-links li a:hover{
@@ -136,7 +146,7 @@ button {
   .nav-links.show{
     display: flex;
     z-index: 2;
-    margin-top: -70px;
+    margin-top: 70px;
   }
 }
 
@@ -189,6 +199,7 @@ header{
 
 .main-bg{
   background-image: url(../img/Path\ 4.svg);
+  background-size: cover;
   height: 1038.69px;
   background-repeat: no-repeat;
   position: absolute;
@@ -202,6 +213,7 @@ header{
   float: right;
   background-image: url(../img/NoPath.png);
   position: absolute;
+  background-size: cover;
   top: -118px;
   right: -160px;
   width: 1169px;
@@ -252,23 +264,19 @@ header{
 /* Responsive Breakpoint */
 @media (max-width: 1024px){
   .main-bg{
-    background-image: url(../img/Path\ 4.svg);
-    background-size: cover;
     height: 1038.69px;
     background-repeat: no-repeat;
     position: absolute;
     top: -30px;
-    right:  -120px;
+    right:  0;
     width: 80vmax;
     height: 80vmax;
   }
 
   .main-bg-2{
-    background-image: url(../img/NoPath.png);
-    background-size: cover;
     position: absolute;
     top: -50px;
-    right: -160px;
+    right: 0;
     width: 80vmax;
     height: 80vmax;       
     background-repeat: no-repeat;          
@@ -284,12 +292,12 @@ header{
 
   .title-main{
     font-size: 4vmax;
-    text-shadow: 2px 2px rgba(255, 255, 255, 0.671);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.164);
   }
 
   .sub-title-main{
     font-size: 4vmax;
-    text-shadow: 2px 2px rgba(255, 255, 255, 0.671);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.164);
   }
 
   .text-box button {
@@ -406,6 +414,15 @@ header{
 
 /* Responsive Breakpoint */
 @media (max-width: 1024px){
+  .why-bg::before{
+    width: 100%;
+    height: 1214.94px;
+  }
+
+  .why-bg::after{
+    right: 0;
+  }
+
   .video-img{
     width: 100%;
     height: 100%;
@@ -416,6 +433,11 @@ header{
     top: 30%;
     left: 40%;
     width: 90px;
+  }
+
+  .why-bg .title{
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -497,7 +519,8 @@ header{
   }
 
   .portofolio .title{
-    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
     width: 100%;
   }
 
@@ -644,68 +667,17 @@ header{
     background-color: #ffffffe8;
   }
 
-  .img-thumbs-2{
-    position: absolute;
-    top: 173px;
-    left: 384px;
-    width: 63px;
-    height: 63px;
+  .testimonials-img{
+    margin: 50px auto 0 auto;
   }
-  
-  .img-thumbs-3{
-    position: absolute;
-    top: 313px;
-    left: 91px;
-    width: 66px;
-    height: 66px;
+
+  .img-thumbs-2, .img-thumbs-3, .img-thumbs-4, .img-thumbs-5, .img-thumbs-6, .img-thumbs-7, .img-thumbs-8, .img-thumbs-9{
+    display: none;
   }
-  
-  .img-thumbs-4{
-    position: absolute;
-    top: 491px;
-    left: 315px;
-    width: 87px;
-    height: 87px;
-  }
-  
-  .img-thumbs-5{
-    position: absolute;
-    top: 611px;
-    left: 20px;
-    width: 139px;
-    height: 139px;
-  }
-  
-  .img-thumbs-6{
-    position: absolute;
-    top: 211px;
-    right: 27px;
-    width: 105px;
-    height: 105px;
-  }
-  
-  .img-thumbs-7{
-    position: absolute;
-    top: 288px;
-    right: 446px;
-    width: 80px;
-    height: 80px;
-  }
-  
-  .img-thumbs-8{
-    position: absolute;
-    top: 630px;
-    right: 361px;
-    width: 67px;
-    height: 67px;
-  }
-  
-  .img-thumbs-9{
-    position: absolute;
-    top: 702px;
-    right: 34px;
-    width: 99px;
-    height: 99px;
+
+  .testimonials::after{
+    width: 100%;
+    height: 1573px;
   }
 }
 
@@ -722,9 +694,17 @@ header{
   align-items: center;
 }
 
+@media (max-width: 1024px){
+  .partner .container{
+    margin-top: 70px;
+  }
+}
+
 /* form */
 .mulai-form{
   min-height: 200px;
+  width: 100%;
+  position: relative;
 }
 
 .mulai-form::after{
@@ -733,8 +713,8 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  top: 5720px;
-  left: 876px;
+  top: -60px;
+  right: -20px;
   width: 1044px;
   height: 952px;
   z-index: -1;
@@ -751,17 +731,6 @@ header{
   justify-content: space-between;
   align-items: center;
 }
-
-/* .form-img{
-  width: 760px;
-  height: 561px;
-}
-
-.form-text{
-  background-color: #b10000;
-  width: 760px;
-  height: 561px;
-} */
 
 .form-wrap{
   display: flex;
@@ -829,6 +798,14 @@ header{
     background-color: #FFFFFF;
   }
 
+  .mulai-form::after{
+    top: -60px;
+    right: 0;
+    width: 1044px;
+    height: 952px;
+    z-index: -1;
+  }
+
   .form-img{
     width: 100%;
     height: auto;
@@ -837,6 +814,11 @@ header{
   .form-data{
     width: 100%;
     height: 700px;
+  }
+
+  .mulai-form .title{
+    width: 100%;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
   }
 
   .form-data .sub-title{
