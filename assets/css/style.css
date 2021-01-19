@@ -370,12 +370,18 @@ header{
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 10px 25px #0000001A;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .card-img{
   width: 76px;
   height: 72px;
   margin: 50px auto;
+}
+
+.card-img-bottom{
+  width: 200px !important;
+  margin: 10px auto !important;
 }
 
 .card h3{
@@ -453,10 +459,8 @@ header{
 
 .portofolio .container{
   width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
+  min-height: 200px;
+  margin: 0px auto;
 }
 
 .portofolio .card{
@@ -504,6 +508,7 @@ header{
   background-color: #666666;
   border-radius: 50%;
   opacity: 50%;
+  cursor: pointer;
 }
 
 .slider-selected{
@@ -897,13 +902,48 @@ header{
     margin-bottom: 50px;
   }
 }
-
+/* Owl Carousel */
 .owl-dots{
-  text-align: center;
+  margin: 100.27px auto 0 auto;
+  width: 190px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .owl-dot{
-  height: 15px;
-  width: 45px;
-  border-radius: 25px;
-  border: 2px solid blue !important;
+  width: 14.24px;
+  height: 14.24px;
+  background-color: #666666 !important;
+  border-radius: 50%;
+  opacity: 50%;
+}
+
+.owl-dots .active{
+  background-color: #1F9BB2 !important;
+  width: 20.47px;
+  height: 20.47px;
+  opacity: 100%;
+}
+
+.owl-prev, .owl-next {
+  width: 65px;
+  height: 65px;
+  background-color: #FFFFFF !important;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  display: block !important;
+  border:0px solid black;
+  color: #0099DA !important;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.owl-prev {
+  left: 100px;
+}
+
+.owl-next{
+  right: 100px;
 }
