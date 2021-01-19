@@ -161,6 +161,22 @@ header{
   gap: 50px;
   position: relative;
   z-index: 100;
+  transition: all .5s linear;
+}
+
+.sticky {
+  z-index: 5;
+  background-color: #ffffffc7;
+  position: fixed;
+  top: -20px;
+  width: 100%;
+  padding: 0 40px;
+  height: 100px;
+  transition: all .5s ease;
+}
+
+.sticky + .banner {
+  padding-top: 102px;
 }
 
 .logo{
@@ -449,7 +465,7 @@ header{
 
 /* Portofolio */
 .portofolio{
-  margin-top: 220px;
+  margin-top: 320px;
 }
 
 .portofolio .title{
@@ -946,4 +962,14 @@ header{
 
 .owl-next{
   right: 100px;
+}
+
+@media (max-width: 1024px){
+  .owl-prev {
+    left: 50px;
+  }
+  
+  .owl-next{
+    right: 50px;
+  }
 }
