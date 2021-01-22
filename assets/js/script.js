@@ -8,12 +8,12 @@ menu.addEventListener("click", function () {
 })
 
 // Owl Carousel
-$('.owl-carousel').owlCarousel({
+$('.owl-portofolio').owlCarousel({
   nav: true,
   navText: ['<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>', '<i class="fas fa-chevron-right fa-2x" aria-hidden="true"></i>'],
   stagePadding: 30,
   center: true,
-  items: 2,
+  items: 5,
   loop: true,
   margin: 300,
   responsive: {
@@ -33,6 +33,15 @@ $('.owl-carousel').owlCarousel({
       items: 1
     }
   }
+});
+
+$('.owl-testimonials').owlCarousel({
+  nav: true,
+  center: true,
+  items: 1,
+  loop: true,
+  margin: 300,
+  dots: true,
 });
 
 // Sticky Navbar
