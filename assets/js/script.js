@@ -36,7 +36,6 @@ $('.owl-portofolio').owlCarousel({
 });
 
 $('.owl-testimonials').owlCarousel({
-  nav: true,
   center: true,
   items: 1,
   loop: true,

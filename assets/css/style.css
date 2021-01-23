@@ -150,13 +150,8 @@ header{
     overflow-x: hidden;
   }
 
-  .sticky {
-    z-index: 5;
-    background-color: #ffffff;
-    position: fixed;
-    width: 100%;
-    transition: all .5s ease;
-    box-shadow: 0px 10px 5px #a0a0a01a;
+  .sticky + .banner {
+    padding-top: 90px;
   }
 
   header{
@@ -238,14 +233,12 @@ header{
   position: absolute;
   top: -85.18868255615234px;
   right:  -120px;
-  width: 62%;
 }
 
 .main-bg-2{
   position: absolute;     
   top: -118px;
   right: -160px;
-  width: 62%;
 }
 
 .text-box{
@@ -290,15 +283,15 @@ header{
 /* Responsive Breakpoint */
 @media (max-width: 1024px){
   .main-bg{
-    top: 50px;
-    right: 0;
-    width: 85%;
+    top: 40px;
+    right: 0px;
+    width: 90%;
   }
 
   .main-bg-2{
-    top: 40px;
-    right: -20px;
-    width: 85%;
+    top: 20px;
+    right: 0px;
+    width: 90%;
   }
 
   .banner{
@@ -501,7 +494,7 @@ header{
 }
 
 .portofolio .card{
-  margin: 0 auto;
+  margin: 5px auto;
   width: 381px;
   height: 620px;
 }
