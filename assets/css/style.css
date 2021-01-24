@@ -486,6 +486,14 @@ header{
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .card h3{
+    font-size: 3vmax;
+  }
+
+  .card p{
+    font-size: 3vmax;
+  }
 }
 
 /* Portofolio */
