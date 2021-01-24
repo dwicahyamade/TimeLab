@@ -95,7 +95,7 @@ header{
   width: 96%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   gap: 50px;
   position: relative;
@@ -116,6 +116,7 @@ header{
 
 .sticky + .banner {
   padding-top: 120px;
+  margin-bottom: 120px;
 }
 
 .logo{
@@ -152,6 +153,7 @@ header{
 
   .sticky + .banner {
     padding-top: 90px;
+    margin-bottom: 0;
   }
 
   header{
@@ -224,19 +226,21 @@ header{
 .banner{
   overflow: hidden;
   width: 100%;
-  height: auto;
-  padding-bottom: 200px;
+  height: 100vh;
   display: inline-block;
+  margin-top: -120px;
 }
 
 .main-bg{
   position: absolute;
+  height: 120vh;
   top: -85.18868255615234px;
   right:  -120px;
 }
 
 .main-bg-2{
   position: absolute;     
+  height: 120vh;
   top: -118px;
   right: -160px;
 }
@@ -285,17 +289,20 @@ header{
   .main-bg{
     top: 40px;
     right: 0px;
-    width: 90%;
+    height: 95vmax;
+    
   }
 
   .main-bg-2{
     top: 20px;
     right: 0px;
-    width: 90%;
+    height: 90vmax;
+    background-position: center;
+    background-size: cover;
   }
 
   .banner{
-    padding-bottom: 80px;
+    margin-top: 120px;
   }
 
   /* .main-bg-2{
@@ -852,6 +859,7 @@ header{
   .mulai-form .title{
     width: 100%;
     text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    padding: 0 20px;
   }
 
   .form-data .sub-title{
