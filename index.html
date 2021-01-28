@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>TimeLab</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet"
@@ -15,9 +15,7 @@
 
 <body>
   <header class="nav-bar" id="header">
-    <div class="logo">
-      <a href="#"><img src="assets/img/Group273.svg" alt="logo"></a>
-    </div>
+    <a class="logo" href="#"><img src="assets/img/Group273.svg" alt="TimeLab logo"></a>
     <div class="menu-toggle" id="menu-toggle">
       <span></span>
       <span></span>
@@ -37,44 +35,47 @@
   </header>
 
   <section id="main-pictures" class="banner">
-    <img src="assets/img/Path4.svg" alt="" class="main-bg">
-    <img src="assets/img/NoPath.png" alt="" class="main-bg-2">
-    <div class="text-box">
-      <h1 class="title-main">Belajar Data Science Kapan Saja, Dimana Saja</h1>
-      <h2 class="sub-title-main">Coba Gratis 30 Hari</h2>
-      <a href="#form" class="btn btn-green page-scroll">Coba Sekarang</a>
-    </div>
-    <div class="partner-top"> <img src="assets/img/Image20@2x.png" alt="">
+    <img src="assets/img/Path4.svg" alt="main background" class="main-bg">
+    <img src="assets/img/NoPath.png" alt="main background" class="main-bg-2">
+    <div class="container">
+      <div class="text-box">
+        <h1 class="title-main">Belajar Data Science Kapan Saja, Dimana Saja</h1>
+        <h2 class="sub-title-main">Coba Gratis 30 Hari</h2>
+        <a href="#form" class="btn btn-green page-scroll">Coba Sekarang</a>
+      </div>
+      <div class="partner-top"> <img src="assets/img/Image20@2x.png" alt="Partners">
+      </div>
     </div>
   </section>
   <section id="why" class="why-bg">
     <h2 class="title">Kenapa Belajar Data Science di TimeLab</h2>
-    <div class="container">
+    <div class="container container-flex">
       <div class="card">
         <div class="card-img">
-          <img src="assets/img/Image1.png" alt="">
+          <img src="assets/img/Image1.png" alt="why us">
         </div>
-        <h3>Proses Belajar Mudah</h3>
-        <p>Langsung coding tanpa ribet instalasi software apapun.</p>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="assets/img/Image2.png" alt="">
-        </div>
-        <h3>Cocok Untuk Pemula</h3>
-        <p>Tidak punya background IT atau Data Science? Jangan khawatir! TimeLab mudah dipahami bagi siapa saja.</p>
+        <h3 class="card-title">Proses Belajar Mudah</h3>
+        <p class="card-desc">Langsung coding tanpa ribet instalasi software apapun.</p>
       </div>
       <div class="card">
         <div class="card-img">
-          <img src="assets/img/Image3.png" alt="">
+          <img src="assets/img/Image2.png" alt="why us">
         </div>
-        <h3>Belajar dari Praktisi Data</h3>
-        <p>Belajar dan dapatkan feedback langsung dari praktisi data setiap bulannya.</p>
+        <h3 class="card-title">Cocok Untuk Pemula</h3>
+        <p class="card-desc">Tidak punya background IT atau Data Science? Jangan khawatir! TimeLab mudah dipahami bagi
+          siapa saja.</p>
       </div>
-      <div class="video">
-        <img src="assets/img/MaskGroup2@2x.png" alt="" class="video-img">
-        <img src="assets/img/Group248.svg" alt="" class="video-play">
+      <div class="card">
+        <div class="card-img">
+          <img src="assets/img/Image3.png" alt="why us">
+        </div>
+        <h3 class="card-title">Belajar dari Praktisi Data</h3>
+        <p class="card-desc">Belajar dan dapatkan feedback langsung dari praktisi data setiap bulannya.</p>
       </div>
+    </div>
+    <div class="video">
+      <img src="assets/img/MaskGroup2@2x.png" alt="Video" class="video-img">
+      <img src="assets/img/Group248.svg" alt="Video play" class="video-play">
     </div>
   </section>
   <section id="portofolio" class="portofolio">
@@ -82,53 +83,55 @@
     <p class="sub-title">
       TimeLab berpartner dengan perusahaan untuk menghadirkan materi belajar berkualitas dengan standar industri
     </p>
-    <div class="owl-carousel owl-portofolio">
-      <div class="card item">
-        <div class="card-img">
-          <img src="assets/img/port1.png" alt="">
-          <h3>Luhur Fajar Martha</h3>
-          <p>Peneliti Litbang</p>
-          <img src="assets/img/Image16.png" class="card-img-bottom" alt="">
+    <div class="container-flex">
+      <div class="owl-carousel owl-portofolio container-flex">
+        <div class="card">
+          <div class="card-img">
+            <img src="assets/img/port1.png" alt="Portofolio">
+          </div>
+          <h3 class="card-title">Luhur Fajar Martha</h3>
+          <p class="card-desc">Peneliti Litbang</p>
+          <img src="assets/img/Image16.png" class="card-img-bottom" alt="Kompas">
         </div>
-      </div>
-      <div class="card item">
-        <div class="card-img">
-          <img src="assets/img/port2.png" alt="">
-          <h3>Dimas Gilang Saputra</h3>
-          <p>Software Engineering</p>
-          <img src="assets/img/efi.png" class="card-img-bottom" alt="">
+        <div class="card">
+          <div class="card-img">
+            <img src="assets/img/port2.png" alt="Portofolio">
+            <h3 class="card-title">Dimas Gilang Saputra</h3>
+            <p class="card-desc">Software Engineering</p>
+            <img src="assets/img/efi.png" class="card-img-bottom" alt="Efishery">
+          </div>
         </div>
-      </div>
-      <div class="card item">
-        <div class="card-img">
-          <img src="assets/img/port3.png" alt="">
-          <h3>Feris Thia</h3>
-          <p>Data Science & Big Data System</p>
-          <img src="assets/img/phi.png" class="card-img-bottom" alt="">
+        <div class="card">
+          <div class="card-img">
+            <img src="assets/img/port3.png" alt="Portofolio">
+            <h3 class="card-title">Feris Thia</h3>
+            <p class="card-desc">Data Science & Big Data System</p>
+            <img src="assets/img/phi.png" class="card-img-bottom" alt="PHI">
+          </div>
         </div>
-      </div>
-      <div class="card item">
-        <div class="card-img">
-          <img src="assets/img/port4.png" alt="">
-          <h3>Hendra Hadhil Choiri</h3>
-          <p>Lead Data Scientist</p>
-          <img src="assets/img/buka.png" class="card-img-bottom" alt="">
+        <div class="card">
+          <div class="card-img">
+            <img src="assets/img/port4.png" alt="Portofolio">
+            <h3 class="card-title">Hendra Hadhil Choiri</h3>
+            <p class="card-desc">Lead Data Scientist</p>
+            <img src="assets/img/buka.png" class="card-img-bottom" alt="Bukalapak">
+          </div>
         </div>
-      </div>
-      <div class="card item">
-        <div class="card-img">
-          <img src="assets/img/port3.png" alt="">
-          <h3>Dimas Gilang Saputra</h3>
-          <p>Software Engineering</p>
-          <img src="assets/img/buka.png" class="card-img-bottom" alt="">
+        <div class="card">
+          <div class="card-img">
+            <img src="assets/img/port3.png" alt="Portofolio">
+            <h3 class="card-title">Dimas Gilang Saputra</h3>
+            <p class="card-desc">Software Engineering</p>
+            <img src="assets/img/buka.png" class="card-img-bottom" alt="Bukalapak">
+          </div>
         </div>
-      </div>
-      <div class="card item">
-        <div class="card-img">
-          <img src="assets/img/port2.png" alt="">
-          <h3>Dimas Gilang Saputra</h3>
-          <p>Software Engineering</p>
-          <img src="assets/img/buka.png" class="card-img-bottom" alt="">
+        <div class="card">
+          <div class="card-img">
+            <img src="assets/img/port2.png" alt="Portofolio">
+            <h3 class="card-title">Dimas Gilang Saputra</h3>
+            <p class="card-desc">Software Engineering</p>
+            <img src="assets/img/buka.png" class="card-img-bottom" alt="Bukalapak">
+          </div>
         </div>
       </div>
     </div>
@@ -146,7 +149,7 @@
     <div class="owl-carousel owl-testimonials">
       <div class="container item">
         <div class="testimonials-img">
-          <img src="assets/img/harliano-80x80.png" class="img-thumbs" alt="">
+          <img src="assets/img/harliano-80x80.png" class="img-thumbs img-main" alt="Testimonials">
         </div>
         <div class="testimonials-text">
           <p>Kesan kesan saya terhadap TimeLab, luar biasa. Suportif temen-temennya terhadap coursenya, mereka selalu
@@ -155,13 +158,13 @@
             dan
             saya
             senang ketemu sama temen-temen baru, networking baru, terima kasih TimeLab.</p>
-          <h3>Harliano Adelsa</h3>
+          <h3 class="testimonials-name">Harliano Adelsa</h3>
           <p>Data Analyst</p>
         </div>
       </div>
       <div class="container item">
         <div class="testimonials-img">
-          <img src="assets/img/harliano-80x80.png" class="img-thumbs" alt="">
+          <img src="assets/img/harliano-80x80.png" class="img-thumbs img-main" alt="Testimonials">
         </div>
         <div class="testimonials-text">
           <p>Kesan kesan saya terhadap TimeLab, luar biasa. Suportif temen-temennya terhadap coursenya, mereka selalu
@@ -170,13 +173,13 @@
             dan
             saya
             senang ketemu sama temen-temen baru, networking baru, terima kasih TimeLab.</p>
-          <h3>Harliano Adelsa</h3>
+          <h3 class="testimonials-name">Harliano Adelsa</h3>
           <p>Data Analyst</p>
         </div>
       </div>
       <div class="container item">
         <div class="testimonials-img">
-          <img src="assets/img/harliano-80x80.png" class="img-thumbs" alt="">
+          <img src="assets/img/harliano-80x80.png" class="img-thumbs img-main" alt="Testimonials">
         </div>
         <div class="testimonials-text">
           <p>Kesan kesan saya terhadap TimeLab, luar biasa. Suportif temen-temennya terhadap coursenya, mereka selalu
@@ -185,13 +188,13 @@
             dan
             saya
             senang ketemu sama temen-temen baru, networking baru, terima kasih TimeLab.</p>
-          <h3>Harliano Adelsa</h3>
+          <h3 class="testimonials-name">Harliano Adelsa</h3>
           <p>Data Analyst</p>
         </div>
       </div>
       <div class="container item">
         <div class="testimonials-img">
-          <img src="assets/img/harliano-80x80.png" class="img-thumbs" alt="">
+          <img src="assets/img/harliano-80x80.png" class="img-thumbs img-main" alt="Testimonials">
         </div>
         <div class="testimonials-text">
           <p>Kesan kesan saya terhadap TimeLab, luar biasa. Suportif temen-temennya terhadap coursenya, mereka selalu
@@ -200,7 +203,7 @@
             dan
             saya
             senang ketemu sama temen-temen baru, networking baru, terima kasih TimeLab.</p>
-          <h3>Harliano Adelsa</h3>
+          <h3 class="testimonials-name">Harliano Adelsa</h3>
           <p>Data Analyst</p>
         </div>
       </div>
@@ -208,45 +211,47 @@
   </section>
   <section id="partner" class="partner">
     <h2 class="title">Parter Kami</h2>
-    <div class="container">
-      <img src="assets/img/micro.png" alt="">
-      <img src="assets/img/my.png" alt="">
-      <img src="assets/img/mdpi.png" alt="">
-      <img src="assets/img/mega.png" alt="">
+    <div class="container container-flex">
+      <img src="assets/img/micro.png" alt="Microsoft">
+      <img src="assets/img/my.png" alt="Maybank">
+      <img src="assets/img/mdpi.png" alt="MDPI">
+      <img src="assets/img/mega.png" alt="Bank Mega">
     </div>
   </section>
 
   <section id="form" class="mulai-form">
     <h2 class="title">Mulai karir Anda sebagai Data Scientist hari ini!</h2>
     <div class="form-wrap">
-      <img src="assets/img/form-img.png" class="form-img" alt="">
+      <div class="form-img">
+        <img src="assets/img/form-img.png" alt="">
+      </div>
       <div class="form-data">
         <h2 class="sub-title-main">Coba Gratis 30 Hari!</h2>
         <p class="sub-title">Isi data dibawah ini untuk memulai</p>
         <form action="/" method="POST">
-          <input type="text" name="email" placeholder="Alamat email *">
-          <input type="text" name="email" placeholder="No. WhatsApp *">
-          <input type="text" name="email" placeholder="Password *">
+          <input type="tel" name="email" placeholder="Alamat email *">
+          <input type="number" name="noWA" placeholder="No. WhatsApp *">
+          <input type="password" name="password" placeholder="Password *">
           <button type="submit" name="submit" class="btn btn-green">COba Sekarang</button>
         </form>
       </div>
     </div>
   </section>
   <footer class="footer">
-    <div class="container">
+    <div class="container container-flex">
       <div class="footer-box">
         <img src="assets/img/Group276.svg" alt="">
         <div class="sub-title">
-          Copyright © 2021 TimeLab. All Rights Reserved.
+          <p>Copyright © 2021 TimeLab. All Rights Reserved.</p>
         </div>
       </div>
       <div class="footer-box">
         <h2 class="title">Kantor Kami</h2>
         <div class="sub-title">
-          Jl. Tukad Yeh Aya IX No.46 <br>
-          Renon, Denpasar, Bali 80226 <br>
-          Email: info@timelab.id <br>
-          Phone: +62 856 11198986
+          <p>Jl. Tukad Yeh Aya IX No.46</p>
+          <p>Renon, Denpasar, Bali 80226</p>
+          <p>Email: info@timelab.id</p>
+          <p>Phone: +62 856 11198986</p>
         </div>
       </div>
       <div class="footer-box">
@@ -260,9 +265,9 @@
       <div class="footer-box">
         <h2 class="title">Ikuti Kami</h2>
         <div class="sub-title">
-          <img src="assets/img/facebook.svg" alt="" class="footer-img">
-          <img src="assets/img/linkedin.svg" alt="" class="footer-img">
-          <img src="assets/img/instagram.png" alt="" class="footer-img">
+          <a href="#"><img src="assets/img/facebook.svg" alt="facebook" class="footer-img"></a>
+          <a href="#"><img src="assets/img/linkedin.svg" alt="linkedin" class="footer-img"></a>
+          <a href="#"><img src="assets/img/instagram.png" alt="instagram" class="footer-img"></a>
         </div>
       </div>
     </div>

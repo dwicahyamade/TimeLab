@@ -13,7 +13,6 @@ $('.owl-portofolio').owlCarousel({
   navText: ['<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>', '<i class="fas fa-chevron-right fa-2x" aria-hidden="true"></i>'],
   stagePadding: 30,
   center: true,
-  items: 5,
   loop: true,
   margin: 300,
   responsive: {
@@ -23,11 +22,11 @@ $('.owl-portofolio').owlCarousel({
     1300: {
       items: 4
     },
-    1000: {
+    900: {
       items: 3
     },
     700: {
-      items: 2
+      items: 1
     },
     300: {
       items: 1
