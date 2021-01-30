@@ -497,7 +497,7 @@ header{
   }
 
   .why-bg::before{
-    width: 119%;
+    width: 100%;
   }
 
   .why-bg::after{
