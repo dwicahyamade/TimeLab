@@ -15,7 +15,6 @@
 .container-flex{
   flex-wrap: wrap;
   display: flex;
-  align-items: center;
 }
 
 body{
@@ -40,6 +39,7 @@ body{
   text-align: center;
   padding: 15px 42px;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .btn:hover{
@@ -75,6 +75,18 @@ body{
   transition: all .3s ease;
 }
 
+@media (max-width: 1366px){
+  .title{
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1024px){
+  .title{
+    font-size: 32px;
+  }
+}
+/* ============================================================ END SETTING ============================================================ */
 /* Mobile Nav Button */
 .menu-toggle span{
   display: block;
@@ -129,7 +141,7 @@ header{
   padding-left: 17px;
 }
 
-.nav-links li, a{
+.nav-links li a{
   font-size: 20px;
   color: #666666;
   text-decoration: none;
@@ -146,12 +158,13 @@ header{
   }
 
   header{
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: auto;
     justify-content: space-between;
     height: 70px;
     padding: 5px 2%;
     width: 100%;
+    z-index: 999;
   }
 
   .sticky {
@@ -171,20 +184,25 @@ header{
   }
 
   .nav-links{
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: 0;
     right: 0;
-    opacity: 0;
+    opacity: 1;
     display: flex;
+    margin-top: 70px;
     width: 100%;
-    height: 100vh;
+    height: 0;
     flex-direction: column;
     align-items: center;
     background-color: #ffffff;
-    box-shadow: 0px 3px 6px #0000005e;
-    transform: translateY(-100%);
-    transition: all 1s;
+    /* transform: translateY(0); */
+    overflow: hidden;
+    transition: height .5s ease-in-out;
+  }
+
+  .nav-links.nav-buttons{
+    display: none;
   }
 
   .nav-links li a{
@@ -208,8 +226,9 @@ header{
     display: flex;
     z-index: 2;
     margin-top: 70px;
-    transform: translateY(0);
-    transition: all 1s;
+    height: 100vh;
+    /* transform: translateY(0); */
+    transition: height .5s ease-in-out;
   }
 
   .logo img{
@@ -239,7 +258,6 @@ header{
   width: 100%;
   height: 100vh;
   margin-top: 101px;
-  
 }
 
 .main-bg{
@@ -256,11 +274,14 @@ header{
   right: -160px;
 }
 
+.banner .container{
+  margin-top: 10%;
+}
+
 .text-box{
   position: relative;
   z-index: 2;
   width: 45%;
-  margin-top: 10%;
 }
 
 .title-main{
@@ -296,41 +317,46 @@ header{
 /* Responsive Breakpoint */
 @media (max-width: 1366px){
   .title-main{
-    font-size: 3rem;
+    font-size: 48px;
   }
 
   .sub-title-main{
-    font-size: 3rem;
+    font-size: 48px;
   }
 
   .text-box .btn {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 1024px){
+  .banner{
+    height: auto;
+  }
+
   .banner .container{
     width: 100%;
+    margin: 110% auto 0 auto;
   }
 
   .main-bg{
-    top: 40px;
+    top: 20px;
     right: 0px;
-    height: 95vmax;
-    width: 100vh;
+    width: 105%;
+    /* height: 95vmax; */
   }
 
   .main-bg-2{
-    top: 10px;
+    top: 20px;
     right: 0px;
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    /* height: 100%; */
     background-position: center;
     background-size: cover;
   }
 
   .banner{
-    margin-top: 120px;
+    margin-top: 0;
   }
 
   .text-box{
@@ -342,13 +368,11 @@ header{
   }
 
   .title-main{
-    font-size: 2rem;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.164);
+    font-size: 32px;
   }
 
   .sub-title-main{
-    font-size: 2rem;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.164);
+    font-size: 32px;
   }
 
   .text-box .btn {
@@ -400,7 +424,6 @@ header{
   justify-content: center;
   gap: 30px;
   padding: 0 5%;
-  align-items: stretch;
 }
 
 .card{
@@ -439,7 +462,7 @@ header{
   position: relative;
   margin: 100px auto;
   display: flex;
-  width: 70%;
+  width: 100%;
 }
 
 .video-img{
@@ -448,22 +471,19 @@ header{
 
 .video-play{
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
 }
 
 /* Responsive Breakpoint */
 @media (max-width: 1366px){
   .card-title{
-    font-size: 1.4rem;
+    font-size: 22px;
   }
   
   .card-desc{
-    font-size: 1.2rem;
-  }
-
-  .why-bg .title{
-    font-size: 3rem;
+    font-size: 19px;
   }
 
   .why-bg .container{
@@ -473,11 +493,11 @@ header{
 
 @media (max-width: 1024px){
   .why-bg{
-    margin: 0;
+    margin: 15% auto 0 auto;
   }
 
   .why-bg::before{
-    width: 100%;
+    width: 119%;
   }
 
   .why-bg::after{
@@ -486,7 +506,6 @@ header{
   }
 
   .why-bg .title{
-    font-size: 2rem;
     margin: 0;
     padding-left: 20px;
     padding-right: 20px;
@@ -510,8 +529,9 @@ header{
 
   .video-play{
     position: absolute;
-    top: 30%;
-    left: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 90px;
   }
 
@@ -536,7 +556,6 @@ header{
 
 .portofolio .container-flex{
   width: 100%;
-  align-items: stretch;
   flex-wrap: nowrap;
 }
 
@@ -548,7 +567,7 @@ header{
   flex-grow: 1;
 }
 
-.card p{
+.portofolio .card p{
   padding: 0;
 }
 
@@ -558,8 +577,8 @@ header{
   margin: auto;
 }
 
-.portofolio .card-img-bottom{
-  width: auto !important;
+.owl-carousel .owl-item img.card-img-bottom{
+  width: auto;
 }
 
 .portofolio .card-title{
@@ -602,18 +621,11 @@ header{
 /* Responsove Breakpoint */
 @media (max-width : 1366px){
   .portofolio .title{
-    padding-right: 20px;
-    padding-left: 20px;
     width: 100%;
-    font-size: 3rem;
   }
 }
 
 @media (max-width: 1024px){
-  .portofolio .title{
-    font-size: 2rem;
-  }
-
   .portofolio .sub-title{
     width: 90%;
   }
@@ -661,8 +673,8 @@ header{
   box-shadow: 0px 10px 25px #0000001A;
 }
 
-.img-main{
-  width: auto!important;
+.testimonials .owl-carousel .owl-item img{
+  width: auto;
 }
 
 .testimonials-text{
@@ -760,10 +772,6 @@ header{
 
 /* Responsive Breakpoint */
 @media (max-width: 1366px){
-  .testimonials .title{
-    font-size: 3rem;
-  }
-
   .img-thumbs-4{
     left: 10%;
     transition: all .5s ease;
@@ -781,9 +789,6 @@ header{
 }
 
 @media (max-width: 1024px){
-  .testimonials .title{
-    font-size: 2rem;
-  }
   .testimonials-text{
     width: 90%;
     position: relative;
@@ -812,21 +817,12 @@ header{
 .partner .container{
   margin-top: 100px;
   justify-content: space-evenly;
-}
-
-@media(max-width: 1366px){
-  .partner .title{
-    font-size: 3rem;
-  }
+  align-items: center;
 }
 
 @media (max-width: 1024px){
   .partner .container{
     margin-top: 70px;
-  }
-
-  .partner .title{
-    font-size: 2rem;
   }
 }
 
@@ -861,7 +857,6 @@ header{
   justify-content: space-around;
   align-items: stretch;
   width: 80%;
-  padding-bottom: 50px;
   margin: 107px auto 0 auto;
 }
 
@@ -913,15 +908,6 @@ header{
   font-size: 22px;
 }
 
-@media(max-width: 1366px){
-  .mulai-form .title{
-    font-size: 3rem;
-  }
-
-  .form-warp{
-  }
-}
-
 @media (max-width: 1024px){
   .form-wrap{
     display: flex;
@@ -951,14 +937,13 @@ header{
   }
 
   .form-data .sub-title-main{
-    font-size: 2rem;
+    font-size: 32px;
   }
 
   .mulai-form .title{
     width: 100%;
     text-shadow: 2px 2px 2px rgb(255, 255, 255);
     padding: 0 20px;
-    font-size: 2rem;
   }
 
   .form-data .sub-title{
@@ -988,6 +973,7 @@ header{
 .footer{
   margin-top: 290px;
 }
+
 .footer .container-flex{
   width: 85%;
   min-height: 0;
@@ -1015,8 +1001,13 @@ header{
 }
 
 .footer-img{
+  height: auto;
   margin-right: 22.5px;
   transition: all .5s ease;
+}
+
+.footer-link{
+  display: inline-block;
 }
 
 .footer-img:hover{
@@ -1042,38 +1033,36 @@ header{
 /* Owl Carousel */
 .owl-dots{
   margin: 100.27px auto 0 auto;
-  width: 190px;
-  height: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 
-.owl-dot{
+.owl-carousel button.owl-dot{
   width: 14.24px;
   height: 14.24px;
-  background-color: #666666 !important;
+  background-color: #666666;
   border-radius: 50%;
   opacity: 50%;
+  margin: 0 9.5px;
 }
 
-.owl-dots .active{
-  background-color: #1F9BB2 !important;
+.owl-carousel button.owl-dot.active{
+  background-color: #1F9BB2;
   width: 20.47px;
   height: 20.47px;
   opacity: 100%;
 }
 
-.owl-prev, .owl-next {
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
   width: 65px;
   height: 65px;
-  background-color: #FFFFFF !important;
+  background-color: #FFFFFF;
   border-radius: 50%;
   position: absolute;
-  top: 200px;
-  display: block !important;
+  top: 30%;
+  transform: translateY(-50%);
+  display: block;
   border:0px solid black;
-  color: #0099DA !important;
+  color: #0099DA;
   box-shadow: 0px 3px 6px #00000029;
 }
 
@@ -1086,7 +1075,7 @@ header{
 }
 
 .owl-carousel .owl-item img{
-  width: auto;
+  width: 100%;
   margin: 0 auto;
 }
 

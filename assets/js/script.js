@@ -11,25 +11,29 @@ menu.addEventListener("click", function () {
 $('.owl-portofolio').owlCarousel({
   nav: true,
   navText: ['<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>', '<i class="fas fa-chevron-right fa-2x" aria-hidden="true"></i>'],
-  stagePadding: 30,
+  stagePadding: 100,
   center: true,
   loop: true,
-  margin: 300,
+  // margin: 100,
   responsive: {
     1600: {
-      items: 5
-    },
-    1300: {
       items: 4
     },
+    1300: {
+      items: 3,
+      stagePadding: 50,
+    },
     900: {
-      items: 3
+      items: 2,
+      stagePadding: 50,
     },
     700: {
-      items: 1
+      items: 2,
+      stagePadding: 0,
     },
     300: {
-      items: 1
+      items: 1,
+      stagePadding: 30,
     }
   }
 });
